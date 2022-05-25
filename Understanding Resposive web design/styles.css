@@ -1,77 +1,92 @@
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(44, 41, 38);
 }
 
-main {
-    background: rgb(46, 44, 44);
-    height: 1300px;
-}
-
-header {
-    color: rgb(190, 99, 14);
-    background-color: black;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-header a {
-    text-transform: uppercase;
-    color: rgb(190, 99, 14);
+a {
     text-decoration: none;
 }
 
-header li {
-    margin-right: 20px;
-}
-
-.nav {
+#main-header {
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 26, 24);
+    padding: 0 20px;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
+}
+
+#main-header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header li {
+    margin: 0 16px;
+}
+
+#main-header nav a {
+    color: rgb(185, 131, 31);
+    font-size: 20px;
+}
+
+#main-header nav a:hover {
+    color: rgb(228, 163, 44);
 }
 
 main h1 {
-    font-family: sans-serif;
-    color: rgb(190, 99, 14);
+    text-align: center;
+    color: rgb(238, 164, 80);
+    font-size: 48px;
+}
+
+#latest-products {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#latest-products ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.food-item {
+    background-color: rgb(228, 206, 182);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-item-content {
+    padding: 16px;
     text-align: center;
 }
 
-section ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+.btn {
+    background-color: rgb(228, 157, 44);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 24px;
 }
 
-section li img {
-    width: 300px;
-    height: 250px;
-}
-
-section li {
-    margin: 20px;
-    background-color: rgb(255 218 185);
-    text-align: center;
-}
-
-section li button {
-    margin-bottom: 7px;
-    background-color: rgb(239 132 19);
-    border: none;
-    height: 30px;
-    width: 100px;
-    font-weight: 700;
-    color: rgb(255 255 255);
-    border-radius: 5px;
-}
-
-section li p {
-    font-weight: 700;
-    font-family: sans-serif;
-    font-size: large;
+.btn:hover {
+    background-color: rgb(221, 134, 34);
 }
