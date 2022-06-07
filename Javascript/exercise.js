@@ -51,3 +51,5 @@ function getListItem(array, arrayIndex) {
 
 let firstGoal = getListItem(course.goals, 0)
 alert(firstGoal);
+
+//Test
