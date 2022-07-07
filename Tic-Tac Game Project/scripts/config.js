@@ -9,3 +9,7 @@ function closePlayerConfig() {
     backdropElement.style.display = 'none';
 
 }
+
+function savePlayerConfig() {
+
+}
