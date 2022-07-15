@@ -1,6 +1,11 @@
 function openPlayerConfig(event) {
     editedPlayer = +event.target.dataset.playerid;
 
+    let playerName = document.getElementById('player-' + editedPlayer + '-data').children[1].textContent;
+    if (playerName == 'PLAYER NAME') {
+        playerName = '';
+    }
+    document.getElementById("playername").value = playerName;
     playerConfigOverlayElement.style.display = 'block';
     backdropElement.style.display = 'block';
 }
@@ -25,4 +30,12 @@ function savePlayerConfig(event) {
         return;
     }
     const updatedPlayerDataElement = document.getElementById('player-' + editedPlayer + '-data');
+    updatedPlayerDataElement.children[1].textContent = enteredPlayerName;
+    if (editedPlayer == 1) {
+        players[0].name = enteredPlayerName;
+
+    } else {
+        players[1].name = enteredPlayerName;
+    }
+    closePlayerConfig();
 }
