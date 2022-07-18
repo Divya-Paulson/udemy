@@ -82,7 +82,16 @@ function startNewGame() {
     let player1Ready = player1.textContent != '' && player1.textContent != 'Player name';
     let player2Ready = player2.textContent != '' && player2.textContent != 'Player name';
     if (!player1Ready || !player2Ready) {
-        alert('Enter name of the players');
+        Swal.fire({
+            title: '<strong>Enter player names</strong>',
+            icon: 'info',
+            iconColor: 'rgb(94, 4, 168)',
+            color: 'black',
+            confirmButtonColor: 'rgb(94, 4, 168)',
+            customClass: {
+                title: 'alert-title',
+            }
+        });
         return;
     }
     resetGame();
