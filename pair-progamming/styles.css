@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 239, 247);
+}
+
+#header {
+    background-color: rgb(140 0 255);
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.config {
+    text-align: center;
+}
+
+.game-description {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+}
+
+.player {
+    padding: 1rem 5rem;
+    text-align: center;
+    background-color: rgb(243, 227, 255);
+    margin: 3rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    min-width: 181px;
+}
+
+.player .title {
+    color: rgb(0 0 0);
+    font-weight: 600;
+}
+
+.invisible {
+    display: none;
+}
+
+.player .name {
+    color: rgb(94, 4, 168);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.player .sign {
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.player .edit {
+    color: rgb(140 0 255);
+    background-color: rgb(243, 227, 255);
+    border: none;
+    font-size: 1rem;
+}
+
+.btn {
+    background: rgb(140 0 255);
+    color: rgb(255 255 255);
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+/* #start-btn {
+    background: rgb(140 0 255);
+    color: rgb(255 255 255);
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+} */
+
+.dialog-name {
+    text-align: center;
+    background: rgb(255 255 255);
+    width: 640px;
+    top: 30%;
+    position: fixed;
+    left: calc(50% - 320px);
+    padding: 10px 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.dialog-name h2 {
+    margin: 5px;
+}
+
+.dialog-name p {
+    font-weight: 600;
+    margin: 5px;
+}
+
+.dialog-name input {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 26px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.btn-group .secondary {
+    color: rgb(140 0 255);
+    background: rgb(255 255 255);
+    border: none;
+}
+
+.field {
+    text-align: center;
+}
+
+.cell {
+    width: 96px;
+    height: 96px;
+    margin: 3px;
+    background-color: rgb(216 180 244);
+    border-radius: 2px;
+    border: none;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dialog-name {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgb(0 0 0 / 20%);
+}
+
+.field p {
+    font-weight: 600;
+}
+
+
+/* #status-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgb(0 0 0 / 20%);
+} */
+
+.game-result {
+    text-align: center;
+    background: rgb(33, 6, 45);
+    color: aliceblue;
+    width: 640px;
+    top: 25%;
+    position: fixed;
+    left: calc(50% - 320px);
+    padding: 10px 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700&family=Open+Sans:wght@400;700&family=Oswald:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="title">Play Tic Tac Toe</h1>
+        <p class="game-description">Built with HTML,CSS,Javascript and of course lots of love!</p>
+    </header>
+    <main class="game-container">
+        <section class="config">
+            <div class="players">
+                <div class="player">
+                    <p class="title">Player 1</p>
+                    <h3 id="player-1" class="name">Player name</h3>
+                    <h2 class="sign">X</h2>
+                    <button class="btn edit" id="btn-edit-1">Edit</button>
+                </div>
+                <div class="player">
+                    <p class="title">Player 2</p>
+                    <h3 id="player-2" class="name">Player name</h3>
+                    <h2 class="sign">O</h2>
+                    <button class="btn edit" id="btn-edit-2">Edit</button>
+                </div>
+            </div>
+            <button id="start-btn" class="btn start">Start new game</button>
+        </section>
+        <section id="game-board" class="field invisible">
+            <p>It's your turn <span id="player-name"></span></p>
+            <div class="board">
+                <div class="row">
+                    <button class="cell" id="cell-00"></button>
+                    <button class="cell" id="cell-01"></button>
+                    <button class="cell" id="cell-02"></button>
+                </div>
+                <div class="row">
+                    <button class="cell" id="cell-10"></button>
+                    <button class="cell" id="cell-11"></button>
+                    <button class="cell" id="cell-12"></button>
+                </div>
+                <div class="row">
+                    <button class="cell" id="cell-20"></button>
+                    <button class="cell" id="cell-21"></button>
+                    <button class="cell" id="cell-22"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside id="dialog-name" class="invisible">
+        <div class="dialog-name ">
+            <h2>Choose your Name</h2>
+            <p>Player Name</p>
+            <input type="text" id="name-input" placeholder="Eg: Max">
+            <div class="btn-group">
+                <button id="btn-cancel" class="btn secondary">Cancel</button>
+                <button id="btn-confirm" class="btn primary">Confirm</button>
+            </div>
+        </div>
+
+    </aside>
+    <aside id='status-container' class="invisible">
+        <div class="game-result">
+            <h1 id="game-status"></h1>
+            <p>Click "Start New Game" above, to start a new game!</p>
+        </div>
+    </aside>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
